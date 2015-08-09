@@ -1,0 +1,15 @@
+thead{
+	background: black;
+	color: white;
+}
+
+
+thead, tr td, tr th{
+	border:2px solid #000;
+	padding: 2px 6px;
+	text-align: center;
+}
+
+
+/* CSS para efeitos jQuery */
+.impar {background: #CCC;}

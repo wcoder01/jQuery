@@ -1,0 +1,25 @@
+p{
+	width: 200px;
+	height: 200px;
+	border: dashed 5px black;
+	background: lightgray;
+	font-size: 16px;
+	padding: 20px;
+	text-align: justify;
+}
+
+
+span{
+	background: lightgray;
+	font-size: 20px;
+	padding: 0 5px 0 5px;
+	border: solid black 3px;
+	padding-left: 100px;
+	padding-right: 100px;
+
+}
+
+span:hover{
+	background: black;
+	color: white;
+}
