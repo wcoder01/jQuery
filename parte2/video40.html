@@ -2,24 +2,28 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Video 00</title>
+	<title>Video 40</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/plugins/XXXX.js"></script>
 	<script type="text/javascript">
 	$(function(){
-
-
 		
+		$("#progressbar").progressbar({
+			value: 32
+		});
+
 
 	});
 	</script>
+
 </head>
 <body>
-<h1>titulo</h1>
+<h1>Barra de Progresso</h1>
 
-
+<div id="progressbar"></div>
 
 
 </body>

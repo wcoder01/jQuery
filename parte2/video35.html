@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Video 35</title>
+	
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		
+		$("a").button({
+			icons: {primary: "ui-icon-lightbulb"},
+			text: false
+		});
+
+		$("#checks").buttonset();
+		$("#radios").buttonset();
+
+
+
+
+	});
+
+
+	</script>
+</head>
+<body>
+<h1>Button</h1>
+<p>
+<a href="#">Botão A</a>
+</p>
+
+<div id="checks">
+	<input type="checkbox" id="checkbox1"><label for="checkbox1">X</label>
+	<input type="checkbox" id="checkbox2"><label for="checkbox2">T</label>
+	<input type="checkbox" id="checkbox3"><label for="checkbox3">I</label>
+</div>
+<br>
+<div id="radios">
+	<input type="radio" id="radio1" name="radio"><label for="radio1">Homem</label>
+	<input type="radio" id="radio2" name="radio"><label for="radio2">Mulher</label>
+
+</div>
+</body>
+</html>

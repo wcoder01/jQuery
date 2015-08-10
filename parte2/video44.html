@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Video 44</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<style type="text/css">
+	#feedback{font-size: 1.4em;}
+	#selectable .ui-selecting{ background: #FECA40;}
+	#selectable .ui-selected{ background: #F39814; color: white;}
+	#selectable {list-style-type: none; margin: 0; padding: 0;}
+	#selectable li{margin: 3px; padding: 1px; width: 100px; height: 20px; text-align: center;}
+	</style>
+	
+
+	<script type="text/javascript">
+	$(function(){
+
+		$("#selectable").selectable();
+		
+
+
+	});
+	</script>
+</head>
+<body>
+<h1>Elementos Selecionáveis</h1>
+
+<ol id="selectable">
+	<li class="ui-state-default">1</li>
+	<li class="ui-state-default">2</li>
+	<li class="ui-state-default">3</li>
+	<li class="ui-state-default">4</li>
+	<li class="ui-state-default">5</li>
+	<li class="ui-state-default">6</li>
+	<li class="ui-state-default">7</li>
+	<li class="ui-state-default">8</li>
+	<li class="ui-state-default">9</li>
+	<li class="ui-state-default">10</li>
+</ol>
+
+
+
+</body>
+</html>

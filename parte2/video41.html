@@ -2,25 +2,29 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Video 00</title>
+	<title>Video 41</title>
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/plugins/XXXX.js"></script>
+	<style type="text/css">
+	#resizable{width: 150px; height: 150px;}
+	#resizable h3{ text-align: center; margin: 5px}
+	</style>
+
 	<script type="text/javascript">
 	$(function(){
-
-
+		$("#resizable").resizable();
 		
 
 	});
 	</script>
 </head>
 <body>
-<h1>titulo</h1>
+<h1>Elementos Redimensionáveis</h1>
 
-
-
+<div id="resizable" class="ui-widget-content">
+	<h3 class="ui-widget-header">Resizable</h3>
+</div>
 
 </body>
 </html>

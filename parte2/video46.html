@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Video 46</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/plugins/jquery.validate.min.js"></script>
+	<script>
+	$(function(){
+		
+		$("#formulario").validate({
+			messages: {
+				nome: {required: " Nome Obrigatorio"},
+				email: {
+					required: " Email Obrigatorio",
+					email: " Email Invalido"
+				}
+			}
+		});
+
+	});
+	</script>
+</head>
+<body>
+<h1>Plugin - Validação de Formularios</h1>
+
+
+<form id="formulario">
+	<fieldset>
+	<div>
+		<label for="nome">Nome:</label><br>
+		<input type="text" name="nome" class="required">
+	</div>
+	<div>
+		<label for="email">E-mail</label><br>
+		<input type="text" name="email" class="required email">
+	</div>
+	<input type="submit" value="Gravar">
+	</fieldset>
+</form>
+
+
+
+
+</div>
+
+</body>
+</html>

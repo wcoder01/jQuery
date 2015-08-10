@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Video 33</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+		
+		var dados = ["ActionScript", "AppleScript", "Asp","BASIC",
+						"C","C++","Clojure","COBOL","ColdFusion","Erlang",
+						"Fortran","Groovy","Haskell","Java","javascript",
+						"Lisp","Perl","PHP","Python","Ruby","Scala","Scheme"];
+
+		$("#tags").autocomplete({
+			source: dados
+		});
+
+	});
+
+
+	</script>
+</head>
+<body>
+<h1>Auto Complete Simples</h1>
+
+<div>
+	<label for="tags">Tags:</label>
+	<input type="text" id="tags">
+</div>
+
+
+
+</body>
+</html>

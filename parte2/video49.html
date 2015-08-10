@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Video 49</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" type="text/css" href="js/plugins/treeview/jquery.treeview.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/plugins/treeview/jquery.treeview.js"></script>
+	<script type="text/javascript">
+	$(function(){
+
+		$("#browser").treeview();
+		
+
+	});
+	</script>
+</head>
+<body>
+<h1>Navegação em árvores</h1>
+
+<ul class="filetree treeview" id="browser">
+	<li class="collapsable"><div class="hitarea collapsable-hitarea"></div><span class="folder">Folder 1</span>
+		<ul>
+			<li class="last"><span class="file">Item 1.1</span></li>
+		</ul>
+	</li>
+	<li class="collapsable"><div class="hitarea collapsable-hitarea"></div><span class="folder">Folder 2</span>
+		<ul>
+			<li class="collapsable"><div class="hitarea collapsable-hitarea"></div><span class="folder">Subfolder 2.1</span>
+
+				<ul id="folder21">
+					<li><span class="file">File 2.1.1</span></li>
+					<li class="last"><span class="file">File 2.1.2</span></li>
+				</ul>
+			</li>
+			<li class="last"><span class="file">File 2.2</span></li>
+		</ul>
+	</li>
+	<li class="closed expandable"><div class="hitarea collapsable-hitarea"></div><span class="folder">Folder 3 (closed at start)</span>
+		<ul style="dislpay: none;">
+			<li class="last"><span class="file">File 3.1</span><li>
+		</ul>
+	</li>
+	<li class="closed expandable"><div class="hitarea collapsable-hitarea"></div><span class="folder">Folder 4</span>
+		<ul style="dislpay: none;">
+			<li class="last"><span class="file">File 4.1</span><li>
+		</ul>
+	</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

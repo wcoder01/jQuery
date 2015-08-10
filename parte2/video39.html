@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Video 39</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+		$("#catalogo li").draggable({
+			helper: "clone"
+		});
+
+		$("#carrinho ul").droppable({
+			drop: function(event, ui){
+				$(this).append($("<li/>").text(ui.draggable.text()));
+				$(this).find(".mensagem").remove();
+			}
+		});
+		
+
+	});
+	</script>
+</head>
+<body>
+<h1>Carrinho de compras</h1>
+
+<div id="catalogo">
+	<h2>Catalogo</h2>
+	<ul>
+		<li>Camisa</li>
+		<li>Meia</li>
+		<li>Gravata</li>
+		<li>Terno</li>
+		<li>Sapato</li>
+	</ul>
+</div>
+
+<div id="carrinho">
+	<h2>Carrinho</h2>
+	<ul>
+		<li class="mensagem">Compras...</li>
+	</ul>
+</div>
+
+
+
+</body>
+</html>

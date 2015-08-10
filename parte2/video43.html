@@ -2,25 +2,36 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Video 00</title>
+	<title>Video 43</title>
 	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
 	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="js/plugins/XXXX.js"></script>
+
 	<script type="text/javascript">
 	$(function(){
-
-
 		
+		$("#slider").slider({
+			min: 10,
+			max: 100,
+			value: 60,
+			orientation: "vertical",
+			slide: function(event, ui){
+				$("#valor").val(ui.value)
+			}
+		});
 
 	});
 	</script>
+
+	<style type="text/css">
+	#slider{margin: 50px}
+	</style>
 </head>
 <body>
-<h1>titulo</h1>
+<h1>Slide</h1>
 
-
-
+<div id="slider"></div>
+Valor: <input type="text" id="valor">
 
 </body>
 </html>

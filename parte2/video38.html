@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Video 38</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+
+		$("#drag").draggable();	
+		$("#drop").droppable({
+			drop: function(event, ui){	//ui - elemento recebido
+				$(this).addClass("ui-state-highlight")
+				.find("p").html("colocado");
+
+			}
+		});	
+
+
+	});
+
+
+	</script>
+
+	<style type="text/css">
+	#drag{border: 2px solid black; width: 200px; height: 200px; margin: 30px 0}
+	#drop{border: 2px solid black; width: 350px; height: 350px;}
+	
+	</style>
+</head>
+<body>
+<h1>Drag and Drop</h1>
+
+<div id="drag">
+	<p>Leve-me para o alvo</p>
+</div>
+
+<div id="drop">
+	<p>Coloque aqui</p>
+</div>
+
+</body>
+</html>

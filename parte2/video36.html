@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Video 36</title>
+
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-i18n.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		/* 
+		//Ingles
+		$("#date").datepicker({
+			showOn: "button",
+			buttonImage: "images/calendar.png",
+			buttonImageOnly: true,
+		});
+		*/
+		// varios idiomas jquery-ui-i18n.min.js
+		$("#date").datepicker($.datepicker.regional["pt-BR"]);
+
+
+
+	});
+
+
+	</script>
+</head>
+<body>
+<h1>Selecionador de Datas</h1>
+
+<p>Date: <input type="text" id="date"></p>
+
+
+
+</body>
+</html>

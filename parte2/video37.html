@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Video 37</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css">
+	<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript">
+	$(function(){
+		$("#dialog").dialog({
+			height: 300,
+			modal: true,
+			buttons: {
+				"Deletar todos": function(){
+					$(this).dialog("close"); //fechar janela
+				},
+				Cancel: function(){
+					$(this).dialog("close"); //fechar janela
+				}
+			}
+		});		
+
+	});
+
+
+	</script>
+</head>
+<body>
+<h1>Janela de Dialogo Modal</h1>
+
+<div class="demo">
+	<div id="dialog" title="Dialog Modal">
+		<p>Adicionar uma janela modal faz com que a caixa de dialogo seja bem mais enfática por que ela salta ao conteúdo da página.</p>
+	</div>
+</div>
+
+
+</body>
+</html>
